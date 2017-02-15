@@ -4,7 +4,7 @@ A port of [Filters4Processing][] to JRubyArt
 A growing collection of pixel shaders ported to Processing to be used with the `filter()` function. Most of these shaders come from the excellent [Shadertoy](https://www.shadertoy.com) by Iñigo Quilez.
 
 ### To run / watch shader sketches
-NB: since jruby_art-2.6.11 glsl files are also _watched_, so you can edit the shader of the sketch running in
+NB: glsl files are also _watched_, so you can edit the shader of the sketch running in
 watch mode, and it will automatically reload when you save your changes...
 ```bash
 # autorun all sketches
