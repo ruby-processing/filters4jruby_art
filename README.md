@@ -13,22 +13,10 @@ rake # assume rake and processing and jruby_art installed
 ```
 Run / Watch individual sketches as follows
 ```bash
-k9 -r sketch.rb # k9 -w sketch.rb
+k9 -r sketch.rb 
+# or k9 -w sketch.rb
 ```
-to avoid need for `--nojruby` flag in `.rp5rc` add following (if pure yaml)
-```yaml
-JRUBY: 'false'
-```
-or if you used our configRP5.pde tool (emits json)
-```json
-{
-"JRUBY": "false",
-....
-}
-```
-NB: delete line, or change back to 'true' when you need to use gems....
 
-This is a java/jruby permission thing, and beyond our control
 ## Filters
 
 ### Barrel Blur Chroma
