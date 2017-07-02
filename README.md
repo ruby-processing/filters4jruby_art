@@ -75,7 +75,7 @@ end
 
 ## Notes about porting filters from Shadertoy
 
-Shadertoy and Processing both have their own quirks when it comes to shader programming. We need to make some changes in order to make Shadertoy code work with Processing/JRubyArt. See [wiki](https://github.com/jruby_art/filters4jruby_art/wiki/Translating-shaders-for-processing) which you are welcome to edit if you know better
+Shadertoy and Processing both have their own quirks when it comes to shader programming. We need to make some changes in order to make Shadertoy code work with Processing/JRubyArt. See [wiki](https://github.com/ruby-processing/filters4jruby_art/wiki) which you are welcome to edit if you know better
 
 Now go dig for some [shaders](https://www.shadertoy.com/results?query=filter) and help us extend the library of filters available for Processing/jruby_art!
 
