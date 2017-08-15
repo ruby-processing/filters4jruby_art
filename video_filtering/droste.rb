@@ -1,4 +1,3 @@
-# Pixelate effect
 # Original shader by SCORPION
 # https://www.shadertoy.com/view/4tlGRn
 # Ported to JRubyArt by Martin Prout
@@ -24,13 +23,13 @@ def setup
 end
 
 def time
-  Time.now - origin
+  (Time.now - origin) * 0.5
 end
 
 def draw
-  background(0)
   # Draw the image on the scene
   image(cam, 0, 0)
+
   my_filter.set('globalTime', time)
   # Applies the shader to everything that has already been drawn
   return if mouse_pressed?

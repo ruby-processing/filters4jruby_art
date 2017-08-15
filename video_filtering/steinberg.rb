@@ -1,5 +1,4 @@
 # Because this sketch uses a glsl shader it needs to run using
-# jruby-complete (typically rp5 --nojruby sketch.rb)
 # hold down mouse to see unfiltered output
 load_libraries :video, :video_event
 include_package 'processing.video'

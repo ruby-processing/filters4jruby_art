@@ -2,7 +2,7 @@
 # Original shader by mrharicot
 # https://www.shadertoy.com/view/4dfGDH
 # Ported to Processing by Raphaël de Courville <twitter: @sableRaph>
-# Ported to ruby-processing by Martin Prout
+# Ported to JRubyArt by Martin Prout
 # Keep mouse pressed to show unfiltered image
 
 attr_reader :apply, :bilateral, :my_image

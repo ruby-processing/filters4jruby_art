@@ -5,7 +5,7 @@
 # https://www.shadertoy.com/view/4dfGDH
 
 # Ported to Processing by Raphaël de Courville <twitter: @sableRaph>
-# Ported to ruby-processing by Martin Prout
+# Ported to JRubyArt by Martin Prout
 # Hold mouse click to show unfiltered image
 load_library :control_panel
 attr_reader :my_filter, :my_image, :amount, :panel, :hide

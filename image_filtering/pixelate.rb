@@ -2,7 +2,7 @@
 # Original shader by simesgreen
 # https://www.shadertoy.com/view/4sl3zr
 # Ported to Processing by Raphaël de Courville <twitter: @sableRaph>
-# Ported to ruby-processing by Martin Prout
+# Ported to JRubyArt by Martin Prout
 # Hold mouse click to show unfiltered image
 
 attr_reader :my_filter, :my_image

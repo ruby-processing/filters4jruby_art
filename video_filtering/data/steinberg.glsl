@@ -2,7 +2,7 @@
 // Fake Floyd-Steinberg dithering
 // https://www.shadertoy.com/view/4sjGRD
 
-// Adapted for Ruby-Processing by Martin Prout <@monkstoneT>
+// Adapted for JRubyArt by Martin Prout <@monkstoneT>
 
 #ifdef GL_ES
 precision mediump float;

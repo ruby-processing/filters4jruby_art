@@ -1,13 +1,15 @@
-// This implementation uses GLSL code by ArKano22:
+// This implementation is based on GLSL code by ArKano22:
 // http://www.gamedev.net/topic/590070-glsl-droste/
 uniform float globalTime;
 uniform sampler2D texture; // iChannel0 in Shadertoy
 uniform vec2 sketchSize; // iResolution in Shadertoy
+uniform int mode;
 
 const float TWO_PI = 3.141592*2.0;
 //ADJUSTABLE PARAMETERS:
 const float Branches = 1.0;
-const float scale = 0.5;
+const float scale = 0.4;
+const float off = 0.6;
 //Complex Math:
 vec2 complexExp(in vec2 z){
 	return vec2(exp(z.x)*cos(z.y),exp(z.x)*sin(z.y));
@@ -40,9 +42,8 @@ float map(float value, float istart, float istop, float ostart, float ostop) {
 
 void main( void ){
 
-	//SHIFT AND SCALE COORDINATES TO <-1,1>
-	vec2 uv=gl_FragCoord.xy/sketchSize.xy - .5;
-	uv.y*=sketchSize.y/sketchSize.x;
+	//SHIFT AND SCALE COORDINATES
+	vec2 uv=gl_FragCoord.xy/sketchSize.xy - off;
 
 	//ESCHER GRID TRANSFORM:
 	float factor = pow(1.0/scale,Branches);
@@ -58,5 +59,5 @@ void main( void ){
 	uv.y = map(uv.y,-npower,npower,-1.0,1.0);
 
 	//UNDO SHIFT AND SCALE:
-	gl_FragColor =  texture(texture,uv*0.5+vec2(0.5));
+	gl_FragColor =  texture(texture,uv*off+vec2(off));
 }
