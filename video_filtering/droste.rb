@@ -3,15 +3,16 @@
 # Ported to JRubyArt by Martin Prout
 # Hold mouse click to show unfiltered image
 # Because this sketch uses a glsl shader it needs to run using
-# jruby-complete (typically rp5 --nojruby sketch.rb)
 # hold down mouse to see unfiltered output
 load_libraries :video, :video_event
 include_package 'processing.video'
+java_import 'processing.opengl.PJOGL'
 attr_reader :cam, :my_filter, :origin
 
 def settings
   # size(640, 480, P2D) # safe? setting
   size(1280, 960, P2D)
+  PJOGL.profile = 4
 end
 
 def setup

@@ -2,10 +2,12 @@
 # hold down mouse to see unfiltered output
 load_libraries :video, :video_event
 include_package 'processing.video'
+java_import 'processing.opengl.PJOGL'
 attr_reader :cam, :my_shader
 
 def settings
   size(640, 480, P2D)
+  PJOGL.profile = 4
 end
 
 def setup
